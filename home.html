@@ -4,17 +4,37 @@
 </div>
 
 <div class="row marketing">
-    <div class="col-lg-6">
-        <h4>About Hunt</h4>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <h4><span class="glyphicon glyphicon-info"></span> About Hunt</h4>
         <p>
-            asd
+            Hunt is a fast and flexible, lightweight search platform written in the Haskell programming language. 
         </p>
     </div>
-
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <h4>Features:</h4>
+        <ul>
+            <li>Powerful query language</li>
+            <li>Schema support <br />
+                (numeric data, dates, geospatial data)
+            </li>
+            <li>Granular ranking capabilities</li>
+            <li>JSON API</li>
+            <li>Extensible architecture</li>
+        </ul>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4>Get Hunt</h4>
+        <p><span class="glyphicon glyphicon-download-alt"></span> Download and install Hunt from Github.</p>
+        <pre>
+git clone https://github.com/hunt-framework/hunt.git
+cd hunt
+make first-install</pre>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h4>Try Hunt</h4>
-        <p>
-            asd
-        </p>
+        <p><span class="glyphicon glyphicon-play"></span> Start the Server with one simple command and try it out with one of our sample data sets. The web interface is available at http://localhost:3000/</p>
+
+        <pre>make startServer
+make insertJokes</pre>
     </div>
 </div>
