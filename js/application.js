@@ -8,6 +8,9 @@ var Application;
                 this.$http = $http;
                 this.$location = $location;
                 this.$sce = $sce;
+                $scope.getClass = function(path) {
+                    return ($location.path().substr(0, path.length) === path) ? "active" : "";
+                };
             }
             HuntController.$inject = ['$scope', '$http', '$location', '$sce'];
             return HuntController;
@@ -24,16 +27,24 @@ var app = angular.module('Application', [
 app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
                 when('/home', {
-                    templateUrl: './home.html'
+                    templateUrl: './home.html',
+                    controller: 'HuntController'
                 }).
                 when('/blog', {
-                    templateUrl: './blog.html'
+                    templateUrl: './blog.html',
+                    controller: 'HuntController'
+                }).
+                when('/blog/:article', {
+                    templateUrl: './blog.html',
+                    controller: 'HuntController'
                 }).
                 when('/documentation', {
                     templateUrl: './documentation.html',
+                    controller: 'HuntController'
                 }).
-                when('/about', {
-                    templateUrl: './about.html',
+                when('/contact', {
+                    templateUrl: './contact.html',
+                    controller: 'HuntController'
                 }).
                 otherwise({
                     redirectTo: '/home'
