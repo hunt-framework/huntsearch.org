@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription
+    xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Example</ShortName>
+  <Description>Example Search Engine</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <Url type="application/opensearchdescription+xml"
+    rel="self"
+    template="http://localhost:8080/opensearch.xml"/>
+  <Url type="application/x-suggestions+json"
+    method="GET"
+    template="http://localhost:8080/completion?query={searchTerms}" />
+  <Url type="text/html"
+    method="GET"
+    template="http://localhost:8080/search?query={searchTerms}" />
+</OpenSearchDescription>

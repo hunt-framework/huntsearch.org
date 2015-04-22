@@ -1,0 +1,57 @@
+{
+    "type": "seq",
+    "op": "and",
+    "args": [
+        {
+            "contexts": [
+                "package"
+            ],
+            "query": {
+                "type": "word",
+                "op": "case",
+                "word": "base"
+            },
+            "type": "context"
+        },
+        {
+            "type": "seq",
+            "op": "or",
+            "args": [
+                {
+                    "type": "context",
+                    "contexts": [
+                        "type"
+                    ],
+                    "query": {
+                        "type": "word",
+                        "op": "case",
+                        "word": "data"
+                    }
+                },
+                {
+                    "type": "context",
+                    "contexts": [
+                        "type"
+                    ],
+                    "query": {
+                        "type": "word",
+                        "op": "case",
+                        "word": "newtype"
+                    }
+                },
+                {
+                    "type": "context",
+                    "contexts": [
+                        "type"
+                    ],
+                    "query": {
+                        "type": "word",
+                        "op": "case",
+                        "word": "type"
+                    }
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,5 @@
+{
+    "cmd": "insert-context",
+    "context": "title",
+    "schema": {"type": "realInt"}
+}

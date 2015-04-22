@@ -1,0 +1,19 @@
+{
+    "max": 20,
+    "offset": 0,
+    "count": 3,
+    "result": [
+        {
+            "score": 10.5,
+            "uri": "/data-r-tree"
+        },
+        {
+            "score": 6.8999996,
+            "uri": "/data-stringmap"
+        },
+        {
+            "score": 2.3,
+            "uri": "/data-stringmap/map"
+        }
+    ]
+}

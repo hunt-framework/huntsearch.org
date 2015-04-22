@@ -1,0 +1,6 @@
+{
+    "max": -1,
+    "offset": 0,
+    "query": { "op": "case", "type": "word", "word": "Hunt"},
+    "cmd": "search"
+}

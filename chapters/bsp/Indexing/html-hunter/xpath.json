@@ -1,0 +1,20 @@
+{
+  "cmd": "insert",
+  "document": {
+    "index": {
+      "headers": "data stringmap mapWithKeyM norm Nil Empty siseq
+                  Branch prefixFilter StringMap sym difference
+                  prefixFilterNoCase unionWithKey intersection Key
+                  S1 unNorm v last intersectionWith adjust",
+      "title": "data stringmap Hayoo"
+    },
+    "description": {
+      "headers": "data-stringmap mapWithKeyM norm Nil Empty siseq
+                  Branch prefixFilter StringMap sym difference
+                  prefixFilterNoCase unionWithKey intersection Key
+                  S1 unNorm v_last intersectionWith adjust",
+      "title": "data-stringmap - Hayoo!"
+    },
+    "uri": "http://hayoo2.fh-wedel.de/?query=data-stringmap"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "cmd": "insert-context",
+    "context": "upload",
+    "schema": {
+        "default": false,
+        "type": "date"
+    }
+}

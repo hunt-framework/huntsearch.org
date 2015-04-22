@@ -1,0 +1,18 @@
+[
+  {
+    "cmd": "insert-context",
+    "context": "year",
+    "schema": {
+      "regexp": ".*",
+      "type": "int"
+    }
+  },
+  {
+    "cmd": "insert-context",
+    "context": "type",
+    "schema": {
+      "regexp": ".*",
+      "type": "text"
+    }
+  }  
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "cmd": "insert", 
+    "document": {
+      "uri": "/data-stringmap",
+      "weight": 2.3,
+      "index": {
+        "description": "An efficient implementation of a map
+                        from strings to arbitrary values", 
+        "name": "data-stringmap"
+      } 
+    }
+  },
+  {
+    "cmd": "insert", 
+    "document": {
+      "uri": "/data-stringmap/map",
+      "weight": 2.3, 
+      "index": {
+        "description": "Execute function over all values", 
+        "package": "data-stringmap", 
+        "name": "map"
+      } 
+    }
+  },
+  {
+    "cmd": "insert", 
+    "document": {
+      "uri": "/data-r-tree", 
+      "weight": 3,
+      "index": {
+        "description": "R-Tree is spatial data structure
+                        similar to Quadtrees or B-Trees", 
+        "name": "data-r-tree"
+      } 
+    }
+  } 
+]

@@ -1,0 +1,6 @@
+{
+    "type": "boost",
+    "weight": 3,
+    "query": { .. sub query ... }
+}
+

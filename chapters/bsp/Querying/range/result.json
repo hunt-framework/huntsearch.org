@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "msg": {
+    "result": [
+      {
+        "description": {
+          "upload": "Sun Jan 12 16:33:02 UTC 2014",
+          "type": "package",
+          ... snip ...
+          "name": "AC-Colour",
+        },
+        "uri": "http://hackage.haskell.org/package/AC-Colour"
+      },
+      {
+        "description": {
+          "upload": "Sat Jan 11 17:23:40 UTC 2014",
+          "name": "data-size",
+          ... snip ...
+        },
+        "uri": "http://hackage.haskell.org/package/data-size"
+      }
+    ],
+    "count": 2,
+    "offset": 0,
+    "max": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "cmd": "insert-context",
+    "context": "my-context",
+    "schema": {
+        "default": false,
+        "type": "text"
+    }
+}

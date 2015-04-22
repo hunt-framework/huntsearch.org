@@ -1,0 +1,18 @@
+[
+  {
+    "cmd": "insert-context",
+    "context": "position",
+    "schema": {
+      "default": false,
+      "type": "position"
+    }
+  },
+  {
+    "cmd": "insert-context",
+    "context": "name", 
+    "schema": {
+      "weight": 3, 
+      "type": "text" 
+    }
+  } 
+] 

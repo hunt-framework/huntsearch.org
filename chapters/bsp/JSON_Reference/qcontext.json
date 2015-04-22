@@ -1,0 +1,7 @@
+{
+    "type": "context",
+    "contexts": [
+        "title"
+    ],
+    "query": { .. sub query ..  }
+}

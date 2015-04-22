@@ -1,0 +1,8 @@
+{
+  "cmd": "insert-context",
+  "schema": {
+    "type": "text",
+    "regexp": "\\w*"
+  },
+  "context": "author"
+}

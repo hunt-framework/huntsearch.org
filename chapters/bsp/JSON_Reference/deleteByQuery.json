@@ -1,0 +1,7 @@
+{
+    "cmd": "delete-by-query",
+    "query": {
+      "op": "case", "type": "word", "word": "Hunt"
+    }
+}
+

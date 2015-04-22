@@ -1,0 +1,18 @@
+{
+    "max": 20,
+    "offset": 0,
+    "count": 1,
+    "result": [
+        {
+            "uri": "http://complex-article",
+            "description": {
+                "my array": [1, 2, 3, 4],
+                "title": "Complex Article",
+                "my object": {
+                    "de": "Hallo Welt!",
+                    "en": "hello world!"
+                }
+            }
+        }
+    ]
+}

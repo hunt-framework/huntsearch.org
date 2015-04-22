@@ -1,0 +1,7 @@
+{
+    "max": 10,
+    "text": {
+        "op": "case", "type": "word", "word": "Hunt"
+    },
+    "cmd": "completion"
+}

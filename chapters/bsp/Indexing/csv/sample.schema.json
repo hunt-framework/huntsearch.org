@@ -1,0 +1,23 @@
+[
+    {
+        "context": "category",
+        "schema": {
+            "type": "text"
+        },
+        "cmd": "insert-context"
+    },
+    {
+        "context": "name",
+        "schema": {
+            "type": "text"
+        },
+        "cmd": "insert-context"
+    },
+    {
+        "context": "synopsis",
+        "schema": {
+            "type": "text"
+        },
+        "cmd": "insert-context"
+    }
+]

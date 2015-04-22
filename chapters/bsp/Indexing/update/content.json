@@ -1,0 +1,7 @@
+{
+  "cmd": "update",
+  "document": {
+    "uri": "http://first-article",
+    "content": "This in the first indexed article in hunt."
+  }
+} 

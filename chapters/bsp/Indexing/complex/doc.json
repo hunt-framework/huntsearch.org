@@ -1,0 +1,17 @@
+{
+  "cmd": "insert",
+  "document": {
+    "uri": "http://complex-article",
+    "description": {
+      "title": "Complex Article",
+      "my array": [1, 2, 3, 4],
+      "my object": {
+        "en": "hello world!",
+	"de": "Hallo Welt!"
+      }
+    },
+    "index": {
+      "title": "Complex Article"
+    }
+  }
+}

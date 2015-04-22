@@ -1,0 +1,16 @@
+
+{
+    "cmd": "search",
+    "max": 2,
+    "offset": 0,
+    "query": {
+        "type": "context",
+        "contexts": ["upload"],
+        "query": {
+            "type": "range",
+            "upper": "2014-02-01T00:00:00",
+            "lower": "2014-01-01T00:00:00"
+        }
+    }
+}
+

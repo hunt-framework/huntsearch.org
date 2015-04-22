@@ -21,9 +21,15 @@ This section will use the ScottyFarmer (2014) web server as an example.
 
 Please create a subfolder named `clientExample` and save this file as `Main.hs`.
 
+<!--bsp/Adding_Functionality/clientExample/Main.hs-->
+
 Our Haskell file references an `index.html` file, which should have this content:
 
+<!--bsp/Adding_Functionality/clientExample/index.html-->
+
 The corresponding Cabal file `clientExample.cabal` should look like listing [lst:frontendCabal]:
+
+<!--bsp/Adding_Functionality/clientExample/frontend.cabal-->
 
 In order to run this example one should have a running *Hunt server* listening on port `3000`.
 
@@ -41,6 +47,7 @@ We have built a web server that handles search requests, acts as a proxy by forw
 
 the can see that the default port of the Scotty webserver is `3000`. Therefore we need to change our port to a different value. In listing [lst:frontendmain] we have chosen port `8080` in line 15. Line 18 binds the URL path `/` to our `index.html` file. The path `/search` is bound in line 19 to a handler, which asks the *Hunt server* for documents. These documents are fetched in line 22 and renderd as HTML in line 24. The function `getQuery` in line 23 returns a data structure `LimitedResult`, which is used to hold meta informations about the result of a search request:
 
+<!--bsp/Adding_Functionality/intro/LimitedResult.hs-->
 This data structure contains the number of results, the offset of the first result, the maximum number of returned results and a list of results. The type of the results is bound in line 31 to `ApiDocument`, which contains the document’s description, the document’s URI and the document’s index. The index is empty for search results, because the *Hunt server* just returns the description.
 
 Our `index.html` is simple. It just contains a HTML form, which calls `/search` and adds the query parameter as an HTTP-GET request.
@@ -74,6 +81,7 @@ We are going to extend the sample webserver from the previous section with an Op
 
 The OpenSearch specification is based on a XML file containing a description of the search engine. Such a description could look like this:
 
+<!--bsp/Adding_Functionality/opensearch/opensearch.xml-->
 Save this file as `opensearch.xml` and add this URL handler below the other ones:
 
 ``` {.haskell}
@@ -121,6 +129,7 @@ Often the content of a database needs to be imported into the Hunt search engine
 
 This is an example program[2] to insert documents into a *Hunt server*:
 
+<!--lst:databaseExample}{bsp/Adding_Functionality/database/Main.hs-->
 We can execute this program by running
 
 ``` {.text}
@@ -174,6 +183,8 @@ Although a web interface is the most prevalent interface for this purpose, it is
 
 To keep this example simple, the index is not built from scratch, but loaded from disk into the command line application. The command line program parses text queries and performs them on the index.
 
+<!--bsp/Adding_Functionality/terminal/Main.hs-->
+
 The client expects the path to an existing index file as the first argument (line 3). Then, the Hunt interpreter is initialized with default values and an empty index (line 4). After that, the index is loaded from disk to memory with the `LoadIx` command (line 5). With `getQuery`, queries are read from the command line and passed to the query parser. If the query is valid, it is wrapped in the search command for the interpreter and the search results are displayed on the screen.[4]
 
 Running Hunt inside Yesod
@@ -188,16 +199,20 @@ The Yesod web framework[5] is one of the most popular web frameworks in the Hask
 An abstraction provided by Yesod is the `SubSite`. A reusable web application component can be wrapped into a `SubSite` and then be used with arbitrary Yesod applications. The Hunt search engine is meant to be such a reusable component. The following part illustrated the integration of Hunt as a `SubSite`.[7]
 
 The first line defines a wrapper type. It is the foundation of of the `SubSite` implementation. The initHuntS function helps to initialize the search engine with its default configuration. Then the `SubSite`’s typeclass is defined with the name YesodHunt. In lines 10 to 14, the `SubSite`’s web routes are defined. This is done with the help of a domain specific language. For this small example it is sufficient to create three routes for the different search options.
+<!--bsp/Adding_Functionality/yesod/Handler.hs-->
 
 Since the Yesod routes are generally exposed to the public, it would not be a good idea to expose Hunt’s administrative interface here. Listing [lst:yesodhandler] shows the implementation of the route handler.
 
 HuntHandler is essentially an auxiliary type, to run the `SubSite` within the main Yesod application. The same way runHunt is an auxiliary function to execute Hunt commands within the application. This works the same way as the default server implementation, but runs in Yesod’s Handler monad.
+<!--bsp/Adding_Functionality/yesod/HandlerImpl.hs-->
 
 Listing [lst:yesodhandlerimpl] shows a simple request handler for the paged search route. The other two request handlers are implemented in the same way. The query string is read by calling parseQuery from Hunt’s query interface. If it is successfully parsed, the resulting Query is wrapped into a Search command and executed. Besides some helper functions and a bit of Yesod-specific code, this is all the code needed, to implement the `SubSite`.
 
 ### Creating a SubSite
 
 Listing [lst:subsiteimpl] shows the use of the `SubSite` in a Yesod application. Since the code regarding Hunt is encapsulated within the `SubSite`, the rest of the integration is fairly trivial Yesod code.[8]
+
+<!--bsp/Adding_Functionality/yesod/SubSiteImpl.hs-->
 
 Creating a new index implementation
 -----------------------------------
@@ -210,13 +225,19 @@ First, open the index implementation that is using the `IntMap` from the `contai
 
 We are interested in the instance declaration for the `Index` class. It begins with
 
+<!--bsp/Adding_Functionality/IntMap/head.hs-->
+
 Copy this implementation and all required imports into
 
 `hunt-searchengine/src/Index/IntMap.hs`
 
 Additionally, one need also some other data structures, like the inverted index or a `Bijection` instance. These are also located there:
 
+<!--bsp/Adding_Functionality/IntMap/inverted.hs-->
+
 After copying them into `hunt-searchengine/src/Index/IntMap.hs`, one need to integrate the implementation into the searchengine by adding `cRealInt` to the list of pre defined context types located on `hunt-searchengine/src/Interpreter.hs`:
+
+<!--bsp/Adding_Functionality/IntMap/newcontext.hs-->
 
 then rebuild `hunt-server` by executing
 
@@ -225,6 +246,8 @@ make install && make startServer
 ```
 
 You should now be able to create a new context with this new implementation:
+
+<!--bsp/Adding_Functionality/IntMap/context.json-->
 
 ### How it works
 

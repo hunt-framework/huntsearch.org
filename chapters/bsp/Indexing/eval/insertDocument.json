@@ -1,0 +1,16 @@
+{
+    "cmd": "insert",
+    "document": {
+        "uri": "http://hackage.haskell.org/package/base",
+        "index": {
+            "category": "Prelude",
+            "name": "base",
+            "synopsis": "Basic libraries"
+        },
+        "description": {
+            "category": "Prelude",
+            "name": "base",
+            "synopsis": "Basic libraries"
+        }
+    }
+}

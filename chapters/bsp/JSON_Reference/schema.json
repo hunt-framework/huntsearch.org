@@ -1,0 +1,11 @@
+{
+    "weight": 3,
+    "default": false,
+    "normalizers": [
+        "ZeroFill",
+        "LowerCase"
+    ],
+    "regexp": ".*",
+    "type": "date"
+}
+

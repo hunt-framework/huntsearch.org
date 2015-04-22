@@ -1,0 +1,8 @@
+name,category,synopsis
+base,Prelude,Basic libraries
+lifted-basem,Control,lifted IO operations from the base library
+data-stringmap,Data Structures,An efficient implementation of maps
+    from strings to arbitrary values
+data-r-tree,Data Structures,R-Tree is a spatial data structure
+    similar to Quadtrees or B-Trees
+hxt,XML,A collection of tools for processing XML with Haskell

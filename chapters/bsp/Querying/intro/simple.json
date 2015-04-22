@@ -1,0 +1,10 @@
+{
+    "cmd": "search",
+    "max": 3,
+    "offset": 5,
+    "query": {
+        "op": "nocase",
+        "type": "word",
+        "word": "traverse"
+    }    
+}

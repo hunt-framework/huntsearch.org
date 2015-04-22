@@ -1,0 +1,17 @@
+{
+    "max": 20,
+    "offset": 0,
+    "count": 1,
+    "result": [
+        {
+            "uri": "file:///home/privat/hunt/hunt-server-cli/
+                    sample.csv/2",
+            "description": {
+                "category": "Data Structures",
+                "name": "data-stringmap",
+                "synopsis": "An efficient implementation of maps
+                             from strings to arbitrary values"
+            }
+        }
+    ]
+}

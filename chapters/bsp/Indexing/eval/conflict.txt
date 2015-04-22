@@ -1,0 +1,11 @@
+hunt-server-cli: StatusCodeException
+(Status {statusCode = 409, statusMessage = "Conflict"}) 
+[("Transfer-Encoding","chunked"),
+("Date","Wed, 18 Jun 2014 18:20:54 GMT"),
+("Server","Warp/3.0.0.2"),
+("Content-Type","application/json"),
+("X-Response-Body-Start","{\n    
+\"msg\": \"mentioned context(s) are not present: [\\\"category\\\",
+    \\\"name\\\",\\\"synopsis\\\"]\",\n
+\"code\": 409\n}")]
+(CJ {expose = []})

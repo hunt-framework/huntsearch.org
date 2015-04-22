@@ -1,0 +1,13 @@
+{
+    "uri": "file:///home/privat/hunt/hunt-server-cli/sample.csv/0",
+    "index": {
+        "category": "Prelude",
+        "name": "base",
+        "synopsis": "Basic libraries"
+    },
+    "description": {
+        "category": "Prelude",
+        "name": "base",
+        "synopsis": "Basic libraries"
+    }
+}

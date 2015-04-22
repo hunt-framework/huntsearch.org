@@ -1,0 +1,10 @@
+{
+    "uri": "http://first-article",
+    "index": {
+      "title": "First Article",
+      "content": "This in the first indexed article in hunt."
+    },
+    "description": {
+      "title": "First Article"
+    }
+} 

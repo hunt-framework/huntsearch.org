@@ -1,0 +1,23 @@
+[
+    {
+        "cmd": "insert-context",
+        "context": "body",
+        "schema": {
+            "type": "text"
+        }
+    },
+    {
+        "cmd": "insert-context",
+        "context": "headlines",
+        "schema": {
+            "type": "text"
+        }
+    },
+    {
+        "cmd": "insert-context",
+        "context": "title",
+        "schema": {
+            "type": "text"
+        }
+    }
+]

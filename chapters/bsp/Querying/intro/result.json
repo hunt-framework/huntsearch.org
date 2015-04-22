@@ -1,0 +1,21 @@
+{
+    "max": 2,
+    "offset": 0,
+    "count": 2,
+    "result": [
+        {
+            "score": 1.3909092,
+            "uri": "http://hackage.haskell.org/...snip",
+            "description": {
+                "signature": "(a ->e f b) ->e AVL a ->e f (AVL b)",
+                "name": "traverseAVL",
+                "indexed": "Tue Jul 15 18:43:06 UTC 2014",
+                "module": "Data.Tree.AVL",
+                "package": "AvlTree",
+                "source": "src/Data-Tree...snip",
+                "type": "function",
+                "description": "\u003cp\u003eTh ... snip"
+            }
+        }
+    ]
+}

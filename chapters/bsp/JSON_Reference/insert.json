@@ -1,0 +1,6 @@
+{
+    "cmd": "insert",
+    "document": {
+        "uri": "document://1"
+    }
+}

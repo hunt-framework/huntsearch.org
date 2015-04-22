@@ -1,0 +1,67 @@
+[
+    {
+        "uri": "file:///home/privat/hunt/hunt-server-cli/sample.csv/0",
+        "index": {
+            "category": "Prelude",
+            "name": "base",
+            "synopsis": "Basic libraries"
+        },
+        "description": {
+            "category": "Prelude",
+            "name": "base",
+            "synopsis": "Basic libraries"
+        }
+    },
+    {
+        "uri": "file:///home/privat/hunt/hunt-server-cli/sample.csv/1",
+        "index": {
+            "category": "Control",
+            "name": "lifted-basem",
+            "synopsis": "lifted IO operations from the base library"
+        },
+        "description": {
+            "category": "Control",
+            "name": "lifted-basem",
+            "synopsis": "lifted IO operations from the base library"
+        }
+    },
+    {
+        "uri": "file:///home/privat/hunt/hunt-server-cli/sample.csv/2",
+        "index": {
+            "category": "Data Structures",
+            "name": "data-stringmap",
+            "synopsis": "An efficient implementation of maps from strings to arbitrary values"
+        },
+        "description": {
+            "category": "Data Structures",
+            "name": "data-stringmap",
+            "synopsis": "An efficient implementation of maps from strings to arbitrary values"
+        }
+    },
+    {
+        "uri": "file:///home/privat/hunt/hunt-server-cli/sample.csv/3",
+        "index": {
+            "category": "Data Structures",
+            "name": "data-r-tree",
+            "synopsis": "R-Tree is a spatial data structure similar to Quadtrees or B-Trees"
+        },
+        "description": {
+            "category": "Data Structures",
+            "name": "data-r-tree",
+            "synopsis": "R-Tree is a spatial data structure similar to Quadtrees or B-Trees"
+        }
+    },
+    {
+        "uri": "file:///home/privat/hunt/hunt-server-cli/sample.csv/4",
+        "index": {
+            "category": "XML",
+            "name": "hxt",
+            "synopsis": "A collection of tools for processing XML with Haskell"
+        },
+        "description": {
+            "category": "XML",
+            "name": "hxt",
+            "synopsis": "A collection of tools for processing XML with Haskell"
+        }
+    }
+]
