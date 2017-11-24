@@ -1,6 +1,6 @@
 +++
 title = "Querying Documents"
-slug = "4-querying-documents"
+slug = "querying"
 publishdate = "2014-04-10"
 +++
 

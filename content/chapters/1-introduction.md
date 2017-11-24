@@ -1,7 +1,7 @@
 +++
 title = "Introduction"
 publishdate = "2014-04-06"
-slug = "1-introduction"
+slug = "introduction"
 +++
 
 # Preface
@@ -37,17 +37,17 @@ manual providing problem solutions and background information aims at
 users, who want to use the *Hunt Search Engine Platform*. Recipes
 provide problem solutions and background information.
 
-Chapter [Getting Started][5] covers basic tasks like installing the
-*Hunt server* and setting up a development environment. Chapter
-[Schema Definition][6] describes the set up of index implementations
-by providing insights into the configuration of these
-implementations. Chapter [Indexing][7] highlights the different
+Chapter [Getting Started](#getting-started) covers basic tasks like
+installing the *Hunt server* and setting up a development
+environment. Chapter [Schema Definition][6] describes the set up of
+index implementations by providing insights into the configuration of
+these implementations. Chapter [Indexing][7] highlights the different
 possibilities to index and replace documents. Retrieving documents is
 described in chapter [Querying][8]. Chapter [Administation][9] covers
 the problems, that will appear in a production environment, like
-monitoring and deployment. The last chapter [Using Hunt from Haskell][10]
-goes into the details of coding Haskell software that used the Hunt
-framework to provide search engines.
+monitoring and deployment. The last chapter [Using Hunt from
+Haskell][10] goes into the details of coding Haskell software that
+used the Hunt framework to provide search engines.
 
 ## Required Software and Terminology
 
@@ -258,9 +258,8 @@ Well-Typed, and the Industrial Haskell Group. 2014. “Hackage.”
 [2]: http://www.mingw.org/
 [3]: http://www.haskell.org/platform/
 [4]: http://hackage.haskell.org/
-[5]: 
-[6]: 
-[7]: 
-[8]: 
-[9]: 
-[10]: 
+[6]: /chapters/schema-definition
+[7]: /chapters/indexing
+[8]: /chapters/querying
+[9]: /chapters/administration
+[10]: /chapters/using-hunt-with-haskell

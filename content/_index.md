@@ -35,3 +35,12 @@ $ make insertJokes
 ```
 
 The web interface is available at http://localhost:3000/
+
+
+## See the guide
+
+Now, that you are all setup, follow the guide, starting with the
+[introduction][1].
+
+
+[1]: /chapters/introduction

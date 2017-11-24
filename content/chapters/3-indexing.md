@@ -1,6 +1,6 @@
 +++
 title = "Indexing documents"
-slug = "3-indexing"
+slug = "indexing"
 publishdate = "2014-04-08"
 +++
 

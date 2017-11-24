@@ -1,6 +1,6 @@
 +++
 title = "Administration"
-slug = "5-administration"
+slug = "administration"
 +++
 # Administration
 

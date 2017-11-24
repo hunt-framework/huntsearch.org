@@ -1,6 +1,6 @@
 +++
-title = "Using Hunt from Haskell"
-slug = "6-using-hunt-from-haskell"
+title = "Using Hunt with Haskell"
+slug = "using-hunt-with-haskell"
 publishdate = "2014-04-11"
 +++
 
