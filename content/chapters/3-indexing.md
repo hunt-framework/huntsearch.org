@@ -1,7 +1,7 @@
 +++
 title = "Indexing documents"
+slug = "3-indexing"
 publishdate = "2014-04-08"
-slug = "indexing"
 +++
 
 # Indexing Documents

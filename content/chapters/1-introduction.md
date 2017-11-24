@@ -1,7 +1,7 @@
 +++
-title = "introduction"
-description = ""
+title = "Introduction"
 publishdate = "2014-04-06"
+slug = "1-introduction"
 +++
 
 # Preface
@@ -43,7 +43,7 @@ Chapter [Getting Started][5] covers basic tasks like installing the
 by providing insights into the configuration of these
 implementations. Chapter [Indexing][7] highlights the different
 possibilities to index and replace documents. Retrieving documents is
-described in chapter [Querying][8] . Chapter [Administation][9] covers
+described in chapter [Querying][8]. Chapter [Administation][9] covers
 the problems, that will appear in a production environment, like
 monitoring and deployment. The last chapter [Using Hunt from Haskell][10]
 goes into the details of coding Haskell software that used the Hunt
