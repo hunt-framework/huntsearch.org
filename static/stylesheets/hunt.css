@@ -29,8 +29,11 @@ article {
 
 
 pre {
-  font-size: 0.8em;
   padding-left: 30px; 
+}
+
+code {
+  font-size: 0.8em;
 }
 
 
