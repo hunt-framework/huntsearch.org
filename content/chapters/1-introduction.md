@@ -258,8 +258,8 @@ Well-Typed, and the Industrial Haskell Group. 2014. “Hackage.”
 [2]: http://www.mingw.org/
 [3]: http://www.haskell.org/platform/
 [4]: http://hackage.haskell.org/
-[6]: /chapters/schema-definition
-[7]: /chapters/indexing
-[8]: /chapters/querying
-[9]: /chapters/administration
-[10]: /chapters/using-hunt-with-haskell
+[6]: chapters/schema-definition
+[7]: chapters/indexing
+[8]: chapters/querying
+[9]: chapters/administration
+[10]: chapters/using-hunt-with-haskell

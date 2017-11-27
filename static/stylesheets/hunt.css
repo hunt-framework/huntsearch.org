@@ -27,11 +27,10 @@ body {
 
 
 article {
-  max-width: 720px;
-  padding: 20px;
-  margin: 0 auto;
+  max-width: 758px;
+  padding: 34px;
+  margin: 0 0 0 400px;
 }
-
 
 pre {
   padding-left: 30px; 
@@ -41,11 +40,12 @@ code {
   font-size: 0.8em;
 }
 
+img {
+  max-width: 100%;
+}
 
 
-/*
- * HEADINGS
- */
+/* HEADINGS */
 
 
 h1, h2, h3,
@@ -172,17 +172,6 @@ h5 {
 
 
 
-/* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
 
 
 /*
@@ -221,11 +210,99 @@ h5 {
 }
 
 
-/*
- * MENU
- */
+
+/* MENU */
+
 
 .nav {
   position: fixed;
-  
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: #eee;
+  font-family: "Open Sans";
+}
+
+
+
+/* HAMBURGER */
+
+
+.nav__menu {
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.nav__menu img {
+  max-height: 24px;
+}
+
+
+.nav__toc {
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 0.9em;
+  margin-top: 51px;
+  margin-bottom: 17px;
+}
+
+
+/* TITLE */
+
+
+.nav__title {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+.nav__logo {
+  margin-top: 0;
+  max-width: 150px;
+  padding-left: 20px;
+}
+
+.nav__logo .blog-description {
+  font-size: 0.7rem;
+  line-height: 1.4em;
+}
+
+.nav__list {
+  margin-top: 0;
+  list-style: none;
+}
+
+.nav__list__item {
+}
+
+.nav__list-item a {
+  color: #333;
+  font-size: 0.8em;
+  font-weight: lighter;
+  text-transform: capitalize;
+  padding: 17px 0px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+.nav__footer {
+
+}
+
+.nav__footer a {
+  display: block;
+  max-width: 1.1em;
+  margin: 0 auto;
 }

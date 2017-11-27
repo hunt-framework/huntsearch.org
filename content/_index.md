@@ -1,3 +1,5 @@
+# Welcome to Hunt
+
 Hunt is a fast and flexible, lightweight search platform written in
 the Haskell programming language. The **Hunt framework** provides all
 the tools needed to create fast and scaling customized searchengines.
